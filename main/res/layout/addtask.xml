@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/LinearButton_addtask_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/bt_top_addTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当日计划"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:onClick="Button_task_check"/>
+
+        <Button
+            android:id="@+id/choose_date_addtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择日期"
+            android:textSize="20sp"
+            android:onClick="AddTask_click"/>
+
+        <TextView
+            android:id="@+id/tv_show_nowtime_addtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="我的时间"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/bt_top_addTask"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+    <!--日程表界面-->
+    <LinearLayout
+        android:id="@+id/GanttChart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/LinearButton"
+        android:layout_below="@id/LinearButton_addtask_top">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/bt_showData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/home_main"
+            android:background="#FFFFFF"
+            android:onClick="ChangeView"/>
+
+        <ImageButton
+            android:id="@+id/bt_addTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/calender"
+            android:background="#c8cab6"
+            android:onClick="ChangeView"/>
+
+        <ImageButton
+            android:id="@+id/bt_summaryAndSolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/books"
+            android:background="#FFFFFF"
+            android:onClick="ChangeView"/>
+        <ImageButton
+            android:id="@+id/bt_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/tools"
+            android:background="#FFFFFF"
+            android:onClick="ChangeView"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

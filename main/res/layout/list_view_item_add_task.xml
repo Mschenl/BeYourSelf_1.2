@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--该布局为时间戳的item的布局-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/task"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/plan_name_list_item_add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="task_name"
+        android:textSize="25dp"
+        android:layout_weight="4"/>
+
+    <TextView
+        android:id="@+id/time_point_list_item_add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="task_time"
+        android:textSize="20dp"
+        android:layout_weight="5"/>
+    <TextView
+        android:id="@+id/sign_list_item_add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="sign"
+        android:textSize="20dp"
+        android:textColor="#013cfd"
+        android:layout_weight="1.5"/>
+
+
+
+</LinearLayout>

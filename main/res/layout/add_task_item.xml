@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/pencil"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:id="@+id/title_add_task_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/add_task" />
+
+        <Button
+            android:id="@+id/finish_add_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="25dp"
+            android:text="完成"
+            android:onClick="Finish_add_task" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <!--计划名称-->
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="计划名称"/>
+
+        <EditText
+            android:id="@+id/plan_name_add_task_item"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            />
+
+        <!--起始日期-->
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="起始日期" />
+
+        <EditText
+
+            android:id="@+id/start_date"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content" />
+
+        <!--起始时间-->
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="起始时间" />
+        <EditText
+            android:id="@+id/start_time"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content" />
+
+        <!--截止日期-->
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="终止日期"/>
+        <EditText
+            android:id="@+id/end_date"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content" />
+
+        <!--截止时间-->
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="终止时间"/>
+        <EditText
+            android:id="@+id/end_time"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:text="清  除"
+            android:id="@+id/clear_editText_update_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:onClick="Clear_Edit_date"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

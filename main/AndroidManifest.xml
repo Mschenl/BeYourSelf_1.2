@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.self.be.beyourself_12">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".addtask.CheckTask"></activity>
+
+        <activity android:name=".addtask.AddTaskItem"></activity>
+
+        <activity android:name=".addtask.UpdateTaskItem"></activity>
+
+        <activity android:name=".addtask.AddDailyTask"></activity>
+
+        <activity android:name=".addtask.CheckDailyTask"></activity>
+
+        <activity android:name=".addtask.UpdateDailyTask"></activity>
+
+        <activity android:name=".addtask.InfoDailyTask"></activity>
+
+        <activity android:name=".addtask.DailyTaskSegment"></activity>
+
+        <activity android:name=".addtask.AccomplishDailyTask"></activity>
+
+        <activity android:name=".homeshow.MakePlan"></activity>
+
+        <activity android:name=".homeshow.PersonAnalysis"></activity>
+
+    </application>
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true"
+        android:anyDensity="true" />
+
+</manifest>

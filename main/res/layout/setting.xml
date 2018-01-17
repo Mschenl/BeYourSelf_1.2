@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/im_bt_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/user_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Setting_click"
+                android:src="@drawable/flashlight" />
+            <TextView
+                android:id="@+id/tv_user_id_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="个 人"
+                android:paddingLeft="45dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Setting_click"
+                android:src="@drawable/key" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="其 他"
+
+                android:paddingLeft="45dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/magic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/report"
+                android:paddingLeft="45dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_bt_set"
+        android:layout_above="@id/LinearButton">
+
+    </ListView>
+
+
+    <!-- LinearButton 的描述-->
+    <LinearLayout
+        android:id="@id/LinearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/bt_showData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/home_main"
+            android:background="#FFFFFF"
+            android:onClick="ChangeView"/>
+
+        <ImageButton
+            android:id="@+id/bt_addTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/calender"
+            android:background="#FFFFFF"
+            android:onClick="ChangeView"/>
+
+        <ImageButton
+            android:id="@+id/bt_summaryAndSolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/books"
+            android:background="#FFFFFF"
+            android:onClick="ChangeView"/>
+
+        <ImageButton
+            android:id="@+id/bt_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/tools"
+            android:background="#c8cab6"
+            android:onClick="ChangeView"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im_bt_set"
+        android:layout_alignParentStart="true">
+
+    </ListView>
+
+
+</RelativeLayout>

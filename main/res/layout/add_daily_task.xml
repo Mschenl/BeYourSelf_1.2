@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/pencil"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:id="@+id/title_add_daily_task_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="添加日常规划" />
+
+        <Button
+            android:id="@+id/finish_add_daily_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:text="完成"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <!--规划名称-->
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="规划名称"/>
+
+        <EditText
+            android:id="@+id/plan_name_daily_task"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+
+            />
+
+
+
+        <!--起始时间-->
+        <TextView
+            android:id="@+id/tv_start_time_add_daily_task"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="起始时间" />
+        <EditText
+            android:id="@+id/start_time_daily_task"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+
+        <!--截止时间-->
+        <TextView
+            android:id="@+id/tv_end_time_add_daily_task"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="终止时间"/>
+        <EditText
+            android:id="@+id/end_time_daily_task"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="所属类型"/>
+        <Spinner
+            android:id="@+id/plan_type_daily_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </Spinner>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:text="清  除"
+            android:id="@+id/clear_editText_add_daily_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BeYourSelf_1.2</string>
+
+    <string name="knowself">自我认知</string>
+    <string name="add_task">添加计划</string>
+    <string name="report">专业报表</string>
+    <string name="lighting">解决方案</string>
+    <string name="computer">计算分析</string>
+
+    <string name="example_edit_picker">比如：阅读《平凡的世界》</string>
+
+    <string name="clear_task_added">清除所有计划</string>
+
+    <string name="server_ip">192.168.0.101</string>
+</resources>

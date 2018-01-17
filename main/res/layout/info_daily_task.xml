@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/pencil"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:id="@+id/title_add_daily_task_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="日常规划信息" />
+
+        <Button
+            android:id="@+id/update_info_daily_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:text="修改"
+            android:onClick="Btn_Click"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <!--规划名称-->
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="规划名称"/>
+
+        <TextView
+            android:id="@+id/plan_name_info_daily_task"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
+
+
+
+        <!--起始时间-->
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="起始时间" />
+        <TextView
+            android:id="@+id/start_time_info_daily_task"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
+
+
+        <!--截止时间-->
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="终止时间"/>
+
+        <TextView
+            android:id="@+id/end_time_info_daily_task"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="总计时间"/>
+
+        <TextView
+            android:id="@+id/plan_time_info_daily_task"
+            android:paddingLeft="20dp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="所属类型"/>
+
+        <TextView
+            android:id="@+id/plan_type_info_daily_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"/>
+
+
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_view_info_daily_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp">
+    </GridView>
+</LinearLayout>
